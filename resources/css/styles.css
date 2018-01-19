@@ -20,6 +20,7 @@ html {
 }
 
 header {
+    /*put linear-gradient on top of the image to darken it*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -35,6 +36,76 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    /*200% of the html (20px), above, is 40px*/
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
+
+/*btn design. Have it remain the same after it's been clicked.
+link is just how the element looks in it's normal state.
+visited is like when links turn purple after clicked.*/
+.btn:link,
+.btn:visited {
+    /*change the anchor tag from inline elem to inline block*/
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    /*transition between colors on hover 0.2 seconds*/
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    /*color from flatuicolors.com*/
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+/*active is when the btn is clicked.*/
+.btn:hover,
+.btn:active {
+    /*checking colors on 0to255.com against our #e67e22.*/
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
