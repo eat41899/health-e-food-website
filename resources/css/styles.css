@@ -1,3 +1,6 @@
+/*--------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -14,27 +17,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/*--------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*--------------------------------------------*/
+
 .row {
     max-width: 1140px;
     margin: 0 auto 0 auto;
 }
 
-header {
-    /*put linear-gradient on top of the image to darken it*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/*-------- HEADINGS --------*/
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -47,6 +39,7 @@ h1 {
     word-spacing: 4px;
 }
 
+/*-------- BUTTONS --------*/
 /*btn design. Have it remain the same after it's been clicked.
 link is just how the element looks in it's normal state.
 visited is like when links turn purple after clicked.*/
@@ -56,6 +49,7 @@ visited is like when links turn purple after clicked.*/
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
+    /*get rid of the link line below txt*/
     text-decoration: none;
     border-radius: 200px;
     /*transition between colors on hover 0.2 seconds*/
@@ -96,15 +90,69 @@ visited is like when links turn purple after clicked.*/
     color: #fff;
 }
 
+/*--------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------*/
 
+header {
+    /*put linear-gradient on top of the image to darken it*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
 
+.main-nav {
+    float: right;
+    /*get rid of the bullet pts*/
+    list-style: none;
+    margin-top: 55px;
+    
+}
 
+/*select all of the li elems*/
+.main-nav li {
+    /*put them side by side vs vertical list*/
+    display: inline-block;
+    margin-left: 40px
+}
 
+.main-nav li a:link,
+.main-nav li a:visited{
+    /*padding: [top & bottom] [left & right]*/
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.2s;
+}
 
+.main-nav li a:hover,
+.main-nav li a:active {
+    /*add a border at the bottom*/
+    border-bottom: 2px solid #e67e22; 
+}
 
-
+/*
+Common border color: #e67e22
+*/
 
 
 
