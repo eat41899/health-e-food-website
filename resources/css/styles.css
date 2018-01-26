@@ -204,8 +204,20 @@ header {
 }
 
 /*--------------------------------------------*/
+/* FEATURES */
+/*--------------------------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/*--------------------------------------------*/
 /* MEALS */
 /*--------------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
 
 .meals-showcase {
     list-style: none;
@@ -221,11 +233,27 @@ header {
 .meal-photo {
     width: 100%;
     margin: 0;
+    /*so that the .meal-photo img does not overflow from its transformation scaling*/
+    overflow: hidden;
+    /*behind the imgs put a black container*/
+    background-color: black;
 }
 
 .meal-photo img {
+    /*transparency level*/
+    opacity: 0.6;
     width: 100%;
-    
+    height: auto;
+    /*display zoomed in*/
+    transform: scale(1.35);
+    /*create a delay in zooming out like the btns section as well as the opacity transition*/
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+.meal-photo img:hover {
+    /*zoom out*/
+    transform: scale(1.03);
+    opacity: 1;
 }
 /*
 Common border color: #e67e22
