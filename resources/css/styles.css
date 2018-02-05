@@ -192,6 +192,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+	/*keep the img fixed for scrolling effect*/
+	background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -364,6 +366,59 @@ header {
 .city-features {
 	margin-bottom: 5px;
 }
+
+
+/*--------------------------------------------*/
+/* TESTIMONIALS */
+/*--------------------------------------------*/
+
+.section-testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+	background-size: cover;/*cover width of browser*/
+	color: white;
+	/*keep the img fixed for scrolling effect*/
+	background-attachment: fixed; 
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	margin-top: 40px;
+	position: relative;
+}
+
+blockquote:before {
+	/* \201C from clyphs css tricks site [for quotation marks]*/
+	content: "\201C";
+	font-size: 400%;
+	display: block;
+	/*when position absolute, need to ensure that it's parent position is relative.*/
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+cite {
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+
+
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
 
 
 
