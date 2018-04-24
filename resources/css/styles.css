@@ -136,7 +136,8 @@ a:active {
 link is just how the element looks in it's normal state.
 visited is like when links turn purple after clicked.*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     /*change the anchor tag from inline elem to inline block*/
     display: inline-block;
     padding: 10px 30px;
@@ -150,7 +151,8 @@ visited is like when links turn purple after clicked.*/
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     /*color from flatuicolors.com*/
     background-color: #e67e22;
     border: 1px solid #e67e22;
@@ -166,7 +168,9 @@ visited is like when links turn purple after clicked.*/
 
 /*active is when the btn is clicked.*/
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     /*checking colors on 0to255.com against our #e67e22.*/
     background-color: #cf6d17;
 }
@@ -471,14 +475,33 @@ cite img {
 	padding: 5px 0;
 }
 
+/*--------------------------------------------*/
+/* FORM */
+/*--------------------------------------------*/
 
 
+.contact-form{
+	width: 60%;
+	margin: 0 auto;
+}
 
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
 
+textarea {
+	height: 100px;
+}
 
-
-
-
+input[type=checkbox]{
+	margin: 10px 5px 10px 0;
+}
 
 
 
