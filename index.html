@@ -11,16 +11,13 @@
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
 	
-    
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
-    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="row">
                 <img src="resources/imgs/logo-white.png" alt="healthefood logo" class="logo">
+                <img src="resources/imgs/logo.png" alt="healthefood logo" class="logo-black">
                
                 <ul class="main-nav">
                     <li><a href="#">Food delivery</a></li>
@@ -37,7 +34,7 @@
         </div>
     </header>
     
-    <section class="section-features">
+    <section class="section-features js-section-features">
         <div class="row">
             <!--Title: Get food fast — not fast food.-->
             <h2>Get food fast &mdash; not fast food.</h2>
@@ -440,12 +437,19 @@
 			</p>
 		</div>
 	</footer>
-        
-</body>
+       
+	<!--Include the jquery library-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!--enable new browser functionality in old browsers-->
 	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	
+	<script src="vendors/js/jquery.waypoints.min.js"></script>	
+	<script src="resources/js/script.js"></script>
+</body>
 	
 </html>
 
