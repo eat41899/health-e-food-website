@@ -633,8 +633,30 @@ footer p {
 	margin-top: 20px;
 }
 
+/*--------------------------------------------*/
+/* Animations */
+/*--------------------------------------------*/
 
+.js-waypoint-1 {
+	opacity: 0; /*make element invisible*/
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+}
+.js-waypoint-4 {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
 
+.js-waypoint-2,
+.js-waypoint-3{
+	opacity: 0; /*make element invisible*/
+	
+}
+.js-waypoint-1.animated,
+.js-waypoint-2.animated,
+.js-waypoint-3.animated {
+	opacity: 1; /*return opacity*/
+}
 
 /*
 Common border color: #e67e22
